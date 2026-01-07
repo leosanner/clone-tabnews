@@ -5,7 +5,7 @@ import database from "infra/database.js";
 const ALLOWED_METHODS = ["GET", "POST"];
 
 function methodAllowed(method, allowedMethods) {
-  for (let i = 0; i < allowedMethods.length - 1; ++i) {
+  for (let i = 0; i < allowedMethods.length; ++i) {
     if (method === allowedMethods[i]) {
       return true;
     }
