@@ -1,9 +1,10 @@
+import { Image } from "next/image";
 function Home() {
   return (
     <>
       <h1>Vitor orbigado por ser meu amigão!</h1>
-      <img src="/img/image.png" />
-      <img src="/img/image1.png" />
+      <Image src="/img/image.png" alt="" />
+      <Image src="/img/image1.png" alt="" />
     </>
   );
 }
