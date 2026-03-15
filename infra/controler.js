@@ -8,6 +8,7 @@ function onNoMatchHandler(request, response) {
 function onErrorHandler(error, request, response) {
   const publicErrorObject = new InternalServerError({
     cause: error,
+    statusCode: error.statusCode,
   });
 
   response.status(publicErrorObject.statusCode).json(publicErrorObject);
